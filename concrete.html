@@ -1,0 +1,59 @@
+
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+    <div class="center sliding">Concrete Cost</div>
+    <div class="right">
+      <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+    </div>
+  </div>
+</div>
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="form" class="page">
+<form id='form1'>
+    <!-- Scrollable page content-->
+    <div class="page-content">
+      <div class="list-block">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-title label">Width (m)</div>
+                <div class="item-input">
+                  <input type="text" name='width3' id='width3' placeholder="Enter the width"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-title label">Length (m)</div>
+                <div class="item-input">
+                  <input type="text" name='length3' id='length3' placeholder="Enter the length"/>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+	  <div class="card">
+  <div class="card-content">
+    <div class="card-content-inner" id='total_tile3'><h3>TOTAL COST : RM 0.00</h3></div>
+  </div>
+</div>
+      <div class="content-block">
+        <div class="row">
+          <div class="col-50"><a href="#" id='tile_clr3' class="button button-big button-fill color-yellow">Clear</a></div>
+          <div class="col-50">
+            <input type="button" id='cal_tile3' value="Calculate" class="button button-big button-fill color-green"/>
+          </div>
+        </div>
+      </div>
+    </div>
+</form>
+  </div>
+</div>
