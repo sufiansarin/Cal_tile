@@ -1,18 +1,16 @@
 
 <!-- We don't need full layout here, because this page will be parsed with Ajax-->
 <!-- Top Navbar-->
-<div class="navbar">
-  <div class="navbar-inner">
-    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
-    <div class="center sliding">Hacking Cost</div>
-    <div class="right">
-      <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
-    </div>
-  </div>
-</div>
+
 <div class="pages">
   <!-- Page, data-page contains page name-->
   <div data-page="form" class="page">
+  <div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+    <div class="center sliding">Hacking</div>
+  </div>
+</div>
 <form id='form1'>
     <!-- Scrollable page content-->
     <div class="page-content">
@@ -41,13 +39,22 @@
         </ul>
       </div>
 	  <div class="card">
-  <div class="card-content">
-    <div class="card-content-inner" id='total_tile4'><h3>TOTAL COST : RM 0.00</h3></div>
-  </div>
+  	<div class="card-header">TOTAL</div>
+	<div class="card-content">
+	<div class="card-content-inner" id='total_tile4'>
+	<table>
+	<tr>
+	<td align='right'>Cost</td>
+	<td>&nbsp;</td>
+	<td>RM 0.00</td>
+	</tr>
+	</table>
+	</div>
+	</div>
 </div>
       <div class="content-block">
         <div class="row">
-          <div class="col-50"><a href="#" id='tile_clr4' class="button button-big button-fill color-yellow">Clear</a></div>
+          <div class="col-50"><a href="#" id='tile_clr4' class="button button-big button-fill color-green">Clear</a></div>
           <div class="col-50">
             <input type="button" id='cal_tile4' value="Calculate" class="button button-big button-fill color-green"/>
           </div>

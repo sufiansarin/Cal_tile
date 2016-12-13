@@ -1,16 +1,17 @@
 
 <!-- We don't need full layout here, because this page will be parsed with Ajax-->
 <!-- Top Navbar-->
-<div class="navbar">
-  <div class="navbar-inner">
-    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
-    <div class="center sliding">Tile Cost</div>
-   
-  </div>
-</div>
+
 <div class="pages">
   <!-- Page, data-page contains page name-->
   <div data-page="form" class="page">
+  <div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+    <div class="center sliding">Tile</div>
+   
+  </div>
+</div>
 <form id='form1'>
     <!-- Scrollable page content-->
     <div class="page-content">
@@ -38,14 +39,33 @@
           </li>
         </ul>
       </div>
-	  <div class="card">
-  <div class="card-content">
-    <div class="card-content-inner" id='total_tile'><h3>TOTAL COST : RM 0.00</h3></div>
-  </div>
-</div>
+	<div class="card">
+	<div class="card-header">TOTAL</div>
+	<div class="card-content">
+	<div class="card-content-inner" id='total_tile'>
+	<table>
+	<tr>
+	<td align='right'>Cost</td>
+	<td>&nbsp;</td>
+	<td>RM 0.00</td>
+	</tr>
+	<tr>
+	<td align='right'>Tile</td>
+	<td>&nbsp;</td>
+	<td>0 pcs</td>
+	</tr>
+	<tr>
+	<td align='right'>Adhesive</td>
+	<td>&nbsp;</td>
+	<td>0 no</td>
+	</tr>
+	</table>
+	</div>
+	</div>
+	</div>	
       <div class="content-block">
         <div class="row">
-		  <div class="col-50"><a href="#" id='tile_clr' class="button button-big button-fill color-yellow">Clear</a></div>
+		  <div class="col-50"><a href="#" id='tile_clr' class="button button-big button-fill color-green">Clear</a></div>
           <div class="col-50">
             <input type="button" id='cal_tile' value="Calculate" class="button button-big button-fill color-green"/>
           </div>

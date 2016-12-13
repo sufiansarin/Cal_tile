@@ -1,5 +1,7 @@
 // Initialize your app
-var myApp = new Framework7();
+var myApp = new Framework7({
+  material: true //enable Material theme
+});
 
 // Export selectors engine
 var $$ = Dom7;
@@ -26,15 +28,17 @@ $$('#cal_tile').on('click', function(){
 	var length1 =$$('#length1').val();
 	
 	var total=(width1*length1)*92.76;
+	var tile=(width1*length1)*20;
+	var adhsv=(width1*length1)*0.031;
 	
-	$$('#total_tile').html('<h3>TOTAL COST : RM '+total.toFixed(2)+'</h3>');
+	$$('#total_tile').html("<table><tr><td align='right'>Cost</td><td>&nbsp;</td><td>RM "+total.toFixed(2)+"</td></tr><tr><td align='right'>Tile</td><td>&nbsp;</td><td>"+tile.toFixed()+" pcs</td></tr><tr><td align='right'>Adhesive</td><td>&nbsp;</td><td>"+adhsv.toFixed(3)+" no</td></tr></table>");
 	
 });
 $$('#tile_clr').on('click', function(){
 		
 	$$('#width1').val('');
 	$$('#length1').val('');
-	$$('#total_tile').html('<h3>TOTAL COST : RM 0.00</h3>');
+	$$('#total_tile').html("<table><tr><td align='right'>Cost</td><td>&nbsp;</td><td>RM 0.00</td></tr><tr><td align='right'>Tile</td><td>&nbsp;</td><td>0 pcs</td></tr><tr><td align='right'>Adhesive</td><td>&nbsp;</td><td>0 no</td></tr></table>");
 	
 }); 
 $$('#cal_tile2').on('click', function(){
@@ -43,15 +47,17 @@ $$('#cal_tile2').on('click', function(){
 	var length1 =$$('#length2').val();
 	
 	var total=(width1*length1)*19.43;
+	var cement=(width1*length1)*0.141;
+	var sand=(width1*length1)*0.02;
 	
-	$$('#total_tile2').html('<h3>TOTAL COST : RM '+total.toFixed(2)+'</h3>');
+	$$('#total_tile2').html("<table><tr><td align='right'>Cost</td><td>&nbsp;</td><td>RM "+total.toFixed(2)+"</td></tr><tr><td align='right'>Cement Bag</td><td>&nbsp;</td><td>"+cement.toFixed(3)+" no</td></tr><tr><td align='right'>Sand</td><td>&nbsp;</td><td>"+sand.toFixed(2)+" m<sup>3</sup></td></tr></table>");
 	
 });
 $$('#tile_clr2').on('click', function(){
 		
 	$$('#width2').val('');
 	$$('#length2').val('');
-	$$('#total_tile2').html('<h3>TOTAL COST : RM 0.00</h3>');
+	$$('#total_tile2').html("<table><tr><td align='right'>Cost</td><td>&nbsp;</td><td>RM 0.00</td></tr><tr><td align='right'>Cement Bag</td><td>&nbsp;</td><td>0 no</td></tr><tr><td align='right'>Sand</td><td>&nbsp;</td><td>0 m<sup>3</sup></td></tr></table>");
 	
 });
 $$('#cal_tile3').on('click', function(){
@@ -60,15 +66,18 @@ $$('#cal_tile3').on('click', function(){
 	var length1 =$$('#length3').val();
 	
 	var total=(width1*length1)*102.78;
+	var cmt=(width1*length1)*57;
+	var snd=(width1*length1)*0.049;
+	var agg=(width1*length1)*0.086;
 	
-	$$('#total_tile3').html('<h3>TOTAL COST : RM '+total.toFixed(2)+'</h3>');
+	$$('#total_tile3').html("<table><tr><td align='right'>Cost</td><td>&nbsp;</td><td>RM "+total.toFixed(2)+"</td></tr><tr><td align='right'>Cement Bag</td><td>&nbsp;</td><td>"+cmt.toFixed()+"</td></tr><tr><td align='right'>Sand</td><td>&nbsp;</td><td>"+snd.toFixed(3)+" m<sup>3</sup></td></tr><tr><td align='right'>Aggregate</td><td>&nbsp;</td><td>"+agg.toFixed(3)+" m<sup>3</sup></td></tr></table>");
 	
 });
 $$('#tile_clr3').on('click', function(){
 		
 	$$('#width3').val('');
 	$$('#length3').val('');
-	$$('#total_tile3').html('<h3>TOTAL COST : RM 0.00</h3>');
+	$$('#total_tile3').html("<table><tr><td align='right'>Cost</td><td>&nbsp;</td><td>RM 0.00</td></tr><tr><td align='right'>Cement Bag</td><td>&nbsp;</td><td>0</td></tr><tr><td align='right'>Sand</td><td>&nbsp;</td><td>0 m<sup>3</sup></td></tr><tr><td align='right'>Aggregate</td><td>&nbsp;</td><td>0 m<sup>3</sup></td></tr></table>");
 	
 }); 
 $$('#cal_tile4').on('click', function(){
@@ -78,14 +87,15 @@ $$('#cal_tile4').on('click', function(){
 	
 	var total=(width1*length1)*84.50;
 	
-	$$('#total_tile4').html('<h3>TOTAL COST : RM '+total.toFixed(2)+'</h3>');
+	$$('#total_tile4').html("<table><tr><td align='right'>Cost</td><td>&nbsp;</td><td>RM "+total.toFixed(2)+"</td></tr></table>");
 	
 });
 $$('#tile_clr4').on('click', function(){
 		
 	$$('#width4').val('');
 	$$('#length4').val('');
-	$$('#total_tile4').html('<h3>TOTAL COST : RM 0.00</h3>');
+	
+	$$('#total_tile4').html("<table><tr><td align='right'>Cost</td><td>&nbsp;</td><td>RM 0.00</td></tr></table>");
 	
 }); 
 });
