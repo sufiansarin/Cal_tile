@@ -66,7 +66,7 @@ $$('#cal_tile3').on('click', function(){
 	var length1 =$$('#length3').val();
 	
 	var total=(width1*length1)*102.78;
-	var cmt=(width1*length1)*57;
+	var cmt=(width1*length1)*0.593;
 	var snd=(width1*length1)*0.049;
 	var agg=(width1*length1)*0.086;
 	
